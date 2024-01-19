@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<label for="fruta_favorita">Elige tu fruta favorita</label>
+		<select name="fruta_favorita" id="fruta_favorita">
+			<option value="banana">Banana</option>
+			<option value="sandia">Sandia</option>
+			<option value="melon">Melon</option>
+		</select>
+		<br>
+		<label for="mensaje">Escriba su mensaje</label>
+		<textarea name="mensaje" id="mensaje" rows="10" cols="50"></textarea>
+		<br>
+		<label for="sabor_favorito">¿cual es tu sabor favorito de helado?</label>
+		<input type="text" name="sabor_favorito" id="sabor_favorito" list="opciones">
+		<datalist id="opciones">
+			<option value="Chocolate">
+			<option value="Vainilla">
+			<option value="Nata">
+		</datalist>
+		<br>
+		<button>Enviar</button>
+	</form>
+</body>
+</html>
