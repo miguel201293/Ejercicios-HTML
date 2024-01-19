@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <pre>
+Crea un formulario de registro. El formulario debe tener los siguientes campos:
+
+1.Correo electrónico
+2.Contraseña
+3.Nombre y apellido
+4.Fecha de nacimiento
+5.Número de teléfono
+6.Una selección para elegir planes: plan gratuito, un grupo de 3 planes con precio creciente y una casilla de verificación para un Plan Pro
+7.Número de Tarjeta de Crédito
+8.CVC
+9.Fecha de caducidad
+10.Dirección de Envio
+        </pre>
+        <hr>
+        <form>
+            <label for="correo">Correo Electronico:</label>
+            <input type="email" name="correo">
+            <br>
+            <br>
+            <label for="pass">Contraseña:</label>
+		    <input type="password" name="pass">
+            <br>
+            <br>
+            <label for="Nombre">Nombre:</label>
+		    <input type="text" name="Nombre">
+
+		    <label for="Apellido">Apellido:</label>
+		    <input type="text" name="Apellido">
+            <br>
+            <br>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+		    <input type="date" name="fecha_nacimiento">
+            <br>
+            <br>
+            <label for="telefono">Teléfono:</label>
+		    <input type="tel" name="telefono" maxlength="9">
+            <label for="planes">Elige tu plan</label>
+            <br>
+            <br>
+		    <select name="plan gratuito" id="planes">
+			    <option value="gratuito">gratuito</option>
+			    <option value="estandar">1.5€</option>
+			    <option value="premiun">2€</option>
+		    </select>
+
+            <label for="plan_pro">Plan pro:</label>
+            <input type="checkbox" name="plan_pro" value="acepto">
+            <br>
+		    <br>
+            <label for="tarjeta">Nº de tarjeta:</label>
+            <input type="number" name="tarjeta" maxlength="19">
+            <br>
+		    <br>
+            <label for="cvc">CVC:</label>
+            <input type="number" name="cvc" maxlength="3">
+            <br>
+            <br>
+            <label for="fecha_caducidad">Fecha de caducidad:</label>
+		    <input type="date" name="fecha_caducidad">
+            <br>
+            <br>
+            <label for="direccion">Dirección:</label>
+		    <input type="text" name="direccion" maxlength="50">
+            <br>
+            <br>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
